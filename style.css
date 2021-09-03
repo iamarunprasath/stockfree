@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Nova Mono", monospace;
+  background-color: #f3f4ed;
+  color: black;
+}
+p,
+a {
+  font-size: 1.2rem;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  min-height: 30vh;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+#logo {
+  font-size: 3rem;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+
+header p {
+  font-size: 1rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+header h3 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.search-form {
+  padding: 2rem;
+  display: flex;
+}
+
+.search-form input {
+  font-size: 1.5rem;
+  font-weight: 0;
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  border: 2px solid #b8b5ff;
+}
+
+.search-form button {
+  font-family: "Nova Mono", monospace;
+
+  border: none;
+  padding: 0.5rem;
+  font-size: 1rem;
+  background: #b8b5ff;
+  color: black;
+  cursor: pointer;
+}
+.search-form button:hover {
+  background: #7868e6;
+}
+
+.gallery-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: gray;
+  padding: 0.5rem 0rem;
+}
+
+.gallery-info a {
+  color: gray;
+  text-decoration: none;
+}
+
+.gallery-info :hover {
+  color: black;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  padding: 2rem 0rem;
+  width: 80%;
+  margin: auto;
+  row-gap: 5rem;
+  column-gap: 3rem;
+}
+
+.gallery-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.nav-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 30vh;
+}
+
+.more {
+  border: none;
+  color: black;
+  background: #b8b5ff;
+  font-size: 1rem;
+  padding: 1rem 3rem;
+  cursor: pointer;
+}
+.more:hover {
+  background: #7868e6;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  line-height: 3;
+  align-items: center;
+  justify-content: center;
+  background: rgb(49, 49, 49);
+  color: whitesmoke;
+  min-height: 30vh;
+}
+
+footer a {
+  color: whitesmoke;
+}
+
+#upBtn {
+  width: 3%;
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 3%;
+  z-index: 99;
+  cursor: pointer;
+}
+#mode {
+  width: 3%;
+  /* display: none; */
+  position: fixed;
+  top: 20px;
+  left: 3%;
+  z-index: 99;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 900px) {
+  #upBtn {
+    width: 5%;
+    display: none;
+    position: fixed;
+    bottom: 5%;
+    right: 3%;
+  }
+  #mode {
+    width: 5%;
+    /* display: none; */
+    position: fixed;
+    top: 5%;
+    left: 3%;
+  }
+}
